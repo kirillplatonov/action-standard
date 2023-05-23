@@ -93,8 +93,6 @@ fi
 echo '::group:: Running standard with reviewdog 🐶 ...'
 # shellcheck disable=SC2086
 
-${BUNDLE_EXEC}standardrb ${INPUT_STANDARD_FLAGS} --require ${GITHUB_ACTION_PATH}/rdjson_formatter/rdjson_formatter.rb --format RdjsonFormatter
-
 ${BUNDLE_EXEC}standardrb ${INPUT_STANDARD_FLAGS} --require ${GITHUB_ACTION_PATH}/rdjson_formatter/rdjson_formatter.rb --format RdjsonFormatter \
   | reviewdog -f=rdjson \
       -name="${INPUT_TOOL_NAME}" \
