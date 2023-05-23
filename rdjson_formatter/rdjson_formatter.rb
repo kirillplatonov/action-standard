@@ -8,8 +8,8 @@ class RdjsonFormatter < RuboCop::Formatter::BaseFormatter
   def started(_target_files)
     @rdjson = {
       source: {
-        name: "rubocop",
-        url: "https://rubocop.org/"
+        name: "standard",
+        url: "https://github.com/standardrb/standard"
       },
       diagnostics: []
     }
