@@ -97,7 +97,7 @@ jobs:
         with:
           ruby-version: 3.0.0
       - name: standard
-        uses: reviewdog/action-standard@v1
+        uses: kirillplatonov/action-standard@v1
         with:
           standard_version: gemfile
           standard_plugins: standard-rails:gemfile standard-minitest:gemfile
